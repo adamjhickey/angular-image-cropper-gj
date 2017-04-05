@@ -23,7 +23,7 @@ module.exports = function(angular, Cropper) {
           actionLabels: '&'
         }, 
         controllerAs: 'vm',
-        controller: function() {
+        controller: function($scope) {
           var self = this;
 
         //get values for non eval boolean variables
