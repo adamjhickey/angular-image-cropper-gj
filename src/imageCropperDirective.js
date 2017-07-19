@@ -21,26 +21,31 @@ module.exports = function(angular, Cropper) {
           width: '@',
           zoomStep: '@',
           actionLabels: '&'
-        },
-        bindToController: true,
+        }, 
         controllerAs: 'vm',
-        controller: function() {
+        controller: function($scope) {
           var self = this;
 
-          // Get action labels.
-          this.actionLabels = this.actionLabels();
+        //get values for non eval boolean variables
+				this.imageUrl = $scope.imageUrl;
+				this.width = $scope.width;
+				this.height = $scope.height;
+				this.zoomStep = $scope.zoomStep;
 
-          // Get callback.
-          this.apiCallback = this.api();
-          this.cropCallback = this.cropCallback();
+        // Get action labels.
+        this.actionLabels = $scope.actionLabels();
 
-          // Eval for boolean values.
-          this.fitOnInit = eval(this.fitOnInit);
-          this.centerOnInit = eval(this.centerOnInit);
-          this.checkCrossOrigin = eval(this.checkCrossOrigin);
-          this.showControls = eval(this.showControls);
+        // Get callback.
+        this.apiCallback = $scope.api();
+        this.cropCallback = $scope.cropCallback();
 
-          this.init = function() {
+       // Eval for boolean values.
+        this.fitOnInit = eval($scope.fitOnInit);
+        this.centerOnInit = eval($scope.centerOnInit);
+        this.checkCrossOrigin = eval($scope.checkCrossOrigin);
+        this.showControls = eval($scope.showControls);
+
+        this.init = function() {
             this.target = this.element;
             this.api = new Cropper(self);
           }
