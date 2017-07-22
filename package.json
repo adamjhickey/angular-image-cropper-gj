@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gabrieljaime/angular-image-cropper.git"
+    "url": "https://github.com/gabrieljaime/angular-image-cropper-gj.git"
   },
   "keywords": [
     "angularjs",
@@ -35,9 +35,9 @@
   "author": "Benjamin Cabanes <contact@benjamincabanes.com> (http://benjamincabanes.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bcabanes/angular-image-cropper/issues"
+    "url": "https://github.com/gabrieljaime/angular-image-cropper-gj/issues"
   },
-  "homepage": "https://github.com/bcabanes/angular-image-cropper#readme",
+  "homepage": "https://github.com/gabrieljaime/angular-image-cropper-gj#readme",
   "dependencies": {
     "angular": "1.4.9"
   },
