@@ -1,5 +1,5 @@
 {
-  "name": "angular-image-cropper",
+  "name": "angular-image-cropper-gj",
   "version": "0.0.0-semantically-released",
   "description": "AngularJS directive for cropping images (responsive|touch).",
   "main": "dist/angular-image-cropper.js",
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bcabanes/angular-image-cropper.git"
+    "url": "https://github.com/gabrieljaime/angular-image-cropper.git"
   },
   "keywords": [
     "angularjs",
