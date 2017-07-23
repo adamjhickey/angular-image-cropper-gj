@@ -72,6 +72,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ },
 /* 2 */
 /***/ function(module, exports) {
+
 		module.exports = Cropper;
 
 		/**
@@ -858,7 +859,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 		module.exports = function(angular, Cropper) {
-			require('./angular-image-cropper.scss');
+	  __webpack_require__(4);
 			angular
 				.module('imageCropper')
 				.directive('imageCropper', function() {
