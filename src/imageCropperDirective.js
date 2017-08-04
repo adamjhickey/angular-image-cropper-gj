@@ -23,7 +23,7 @@ module.exports = function(angular, Cropper) {
           actionLabels: '&'
         }, 
         controllerAs: 'vm',
-        controller: function($scope) {
+        controller: ['$scope', function($scope) {
           var self = this;
 
         //get values for non eval boolean variables
@@ -49,7 +49,7 @@ module.exports = function(angular, Cropper) {
             this.target = this.element;
             this.api = new Cropper(self);
           }
-        },
+        }],
         'link': function(scope, element, attributes, controller) {
           controller.element = element[0];
           controller.init();

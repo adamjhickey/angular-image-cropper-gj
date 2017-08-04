@@ -4,7 +4,6 @@
   "description": "AngularJS directive for cropping images (responsive|touch).",
   "main": "dist/angular-image-cropper.js",
   "scripts": {
-    "commit": "git-cz",
     "test": "NODE_ENV=test karma start",
     "test:single": "SINGLE_RUN=true NODE_ENV=test karma start",
     "check-coverage": "node_modules/.bin/istanbul check-coverage --statements 10 --branches 10 --functions 10 --lines 10",
