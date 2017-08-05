@@ -135,10 +135,10 @@ Cropper.prototype.applyRotation = function(degree) {
 };
 
 Cropper.prototype.applyZoomIn = function(zoom) {
-  this.zoomImage(1 + parseFloat(zoom));
+  this.zoomImage(parseFloat(zoom));
 };
 Cropper.prototype.applyZoomOut = function(zoom) {
-  this.zoomImage(1 / ( 1 + parseFloat(zoom)));
+  this.zoomImage(parseFloat(zoom));
 };
 
 Cropper.prototype.applyFit = function() {
