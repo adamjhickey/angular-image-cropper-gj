@@ -210,10 +210,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 	
 	Cropper.prototype.applyZoomIn = function(zoom) {
-	  this.zoomImage(parseFloat(zoom));
+	  this.zoomImage(parseFloat(zoom || this.zoomInFactor));
 	};
 	Cropper.prototype.applyZoomOut = function(zoom) {
-	  this.zoomImage(parseFloat(zoom));
+	  this.zoomImage(parseFloat(zoom || this.zoomOutFactor));
 	};
 	
 	Cropper.prototype.applyFit = function() {
